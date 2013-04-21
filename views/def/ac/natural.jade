@@ -1,0 +1,103 @@
+include ../../mixins.jade
+
+h1 Natural
+
+p Natural bonuses come from having thick skin, making you more difficult to damage. This can also be enhanced by spells such as <a href='http://www.d20pfsrd.com/magic/all-spells/b/barkskin'>Barkskin</a> that toughen the skin.
+
+h2 Improving
+
+table.magic_items
+  tbody
+    tr
+      td.magic_items_bonus Spell
+      td <a href='http://www.d20pfsrd.com/magic/all-spells/b/barkskin'>Barkskin</a>
+      td The spell provides an enhancement bonus to natural armor. Note that this stacks with existing natural armor but not with other "enhanced" natural armor bonuses.
+        table.magic_items
+          theader
+            th.magic_items_bonus &nbsp;
+            th.magic_items_bonus +2
+            th.magic_items_bonus +3
+            th.magic_items_bonus +4
+            th.magic_items_bonus +5
+          tbody
+            tr
+              td.magic_items_bonus Caster Lvl
+              td 3
+              td 6 
+              td 9
+              td 12
+    tr
+      td.magic_items_bonus Spell
+      td Polymorph
+      td The various self-polymorph spells generally provide a natural armor bonus if the target creature type has one. Some examples: <a href='http://www.d20pfsrd.com/magic/all-spells/p/plant-shape-i'>Plant Shape</a>, <a href='http://www.d20pfsrd.com/magic/all-spells/u/undead-anatomy-i'>Undead Anatomy</a>, <a href='http://www.d20pfsrd.com/magic/all-spells/m/monstrous-physique-i'>Monstruous Physique</a>, <a href='http://www.d20pfsrd.com/magic/all-spells/g/giant-form-i'>Giant Form</a>, <a href='http://www.d20pfsrd.com/magic/all-spells/e/elemental-body'>Elemental Body</a>, <a href='http://www.d20pfsrd.com/magic/all-spells/f/form-of-the-dragon-i'>Form of the Dragon</a>.
+    tr
+      td.magic_items_bonus Magic Item
+      td <a href='http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-natural-armor'>Amulet of Natural Armor</a>
+      td This amulet is based on the Barkskin spell. It provides an enhancement bonus to AC.
+        mixin magic_item_table([1,2,3,4,5], [2000,8000,18000,32000,50000])
+    tr
+      td.magic_items_bonus Magic Item
+      td <a href='http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-the-manta-ray'>Cloak of the Manta Ray</a> 
+      td Provides a +3 natural armor bonus when active.
+    tr
+      td.magic_items_bonus Class
+      td Sorcerers of the <a href='http://www.d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/draconic-bloodline'>Draconic Bloodline</a> 
+      td This bloodline gains a series of natural armor increases as they level.
+        table.magic_items
+          theader
+            th.magic_items_bonus &nbsp;
+            th.magic_items_bonus +1
+            th.magic_items_bonus +2
+            th.magic_items_bonus +4
+          tbody
+            tr
+              td.magic_items_bonus Caster Lvl
+              td 3
+              td 9
+              td 15
+    tr
+      td.magic_items_bonus Class
+      td Sorcerers of the <a href='http://www.d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/orc-bloodline'>Orc Bloodline</a> 
+      td This bloodline gains a series of natural armor increases as they level.
+        table.magic_items
+          theader
+            th.magic_items_bonus &nbsp;
+            th.magic_items_bonus +1
+            th.magic_items_bonus +2
+          tbody
+            tr
+              td.magic_items_bonus Caster Lvl
+              td 3
+              td 9
+    tr
+      td.magic_items_bonus Prestige Class
+      td <a href='http://www.d20pfsrd.com/classes/prestige-classes/core-rulebook/dragon-disciple'>Dragon Disciple</a>
+      td This prestige class gains a natural armor bonus of +1 at level 1, 4 & 7. These stack with any existing natural armor.
+        table.magic_items
+          theader
+            th.magic_items_bonus &nbsp;
+            th.magic_items_bonus +1
+            th.magic_items_bonus +2
+            th.magic_items_bonus +3
+          tbody
+            tr
+              td.magic_items_bonus Prestige Lvl
+              td 1
+              td 4
+              td 7
+    tr
+      td.magic_items_bonus Class
+      td The <a href='http://www.d20pfsrd.com/classes/core-classes/ranger/archetypes/paizo---ranger-archetypes/infiltrator'>Infiltrator</a>
+      td This ranger archetype can gain the ability to temporarily add a natural armor bonus.
+    tr
+      td.magic_items_bonus Prestige Class
+      td <a href='http://www.d20pfsrd.com/classes/prestige-classes/other-paizo/a-b/brightness-seeker'>Brightness Seeker</a> 
+      td This prestige class has the ability to grant themselves a short term natural armor bonus.
+    tr
+      td.magic_items_bonus Races 
+      td <a href='http://www.d20pfsrd.com/races/other-races/'>Several</a>
+      td Several non-core races provide a small natural armor bonus. See Tieflings, Seedlings, Changelings & Kobolds for a few.
+    tr
+      td.magic_items_bonus Feat (<i>racial</i>)
+      td <a href='http://www.d20pfsrd.com/feats/arg-feats/armor-of-the-pit-tiefling'>Armor of the Pit</a>
+      td This Tiefling Racial Feat grants a +2 natural armor bonus

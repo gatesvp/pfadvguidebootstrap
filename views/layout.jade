@@ -1,0 +1,34 @@
+doctype 5
+html
+  head
+    title Pathfinder Adventurer's Guide
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootswatch.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //link(rel='stylesheet', href='/css/bootstrap-responsive.css')
+  body
+    div.navbar.navbar-fixed-top
+      div.navbar-inner
+        div.container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') PF Adv Guide
+          div#main-menu.collapse.nav-collapse
+            ul#main-menu-left.nav
+              li.dropdown
+                a.dropdown-toggle(data-toggle='dropdown', href='#') Stats <b class='caret'></b>
+                ul.dropdown-menu
+                  li <a href='/stats/str'>Strength</a>
+                  li <a href='/stats/dex'>Dexterity</a>
+                  li <a href='/stats/cst'>Constitution</a>
+                  li <a href='/stats/int'>Intelligence</a>
+                  li <a href='/stats/wis'>Wisdom</a>
+                  li <a href='/stats/cha'>Charisma</a>
+
+    div.container
+      block content
+
+    script(src="http://code.jquery.com/jquery.js")
+    script(src="js/bootstrap.min.js")

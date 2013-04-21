@@ -1,0 +1,18 @@
+- var pills = [ { name:"Home",path:"/stats/" } ]
+- pills.push( { name:"Str",path:"/stats/str" } )
+- pills.push( { name:"Dex",path:"/stats/dex" } )
+- pills.push( { name:"Con",path:"/stats/cst" } )
+- pills.push( { name:"Int",path:"/stats/int" } )
+- pills.push( { name:"Wis",path:"/stats/wis" } )
+- pills.push( { name:"Cha",path:"/stats/cha" } )
+
+
+div#abilities
+  ul.nav.nav-pills
+    each pill in pills
+      if(pill.path === path)
+        li.active
+          a(href="#{pill.path}") #{pill.name}
+      else
+        li
+          a(href="#{pill.path}") #{pill.name}

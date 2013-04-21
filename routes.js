@@ -6,7 +6,7 @@ var fs = require('fs');
 var url = require('url');
 var view_base = __dirname + '/views';
 
-exports.index = function(req, res){
+exports.index = function(req, res, next){
   //res.render('index', { title: 'PF Combat' });
   var pathname = url.parse(req.url).pathname.toLowerCase(); // make matching case insenstive
   
